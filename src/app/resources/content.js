@@ -55,7 +55,11 @@ const home = {
   headline: <>Data & back-end engineer</>,
   subline: (
     <>
-      I'm Nabil, a machine learning engineer at{" "}
+      I'm Nabil, a software developer at
+      <InlineCode>
+        Badan Sistem Informasi Universitas Islam Indonesia
+      </InlineCode>{" "}
+      , a machine learning engineer at{" "}
       <InlineCode>
         Center of Data Science Universitas Islam Indonesia
       </InlineCode>{" "}
@@ -102,6 +106,20 @@ const about = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
+      {
+        company: "Badan Sistem Informasi UII",
+        timeframe: "2024 - Present",
+        role: "Software Developer",
+        achievements: [
+          <>
+            Contributed to enhancing UII’s environment by implementing Scrum
+            methodologies, DevOps practices, and microservices architecture.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
       {
         company: "Center of Data Science UII",
         timeframe: "2023 - Present",
