@@ -1,0 +1,42 @@
+---
+title: "YOLO-based Small-scaled Model for On-Shelf Availability in Retail"
+publishedAt: "2024-04-01"
+summary: "Aplikasi deteksi OSA menggunakan model YOLO untuk memantau ketersediaan produk di toko ritel, meningkatkan manajemen inventaris secara real-time."
+images:
+  - "/images/projects/project-03/cover-01.png"
+team:
+  - name: "Nabil Najmudin"
+    role: "Data & Machine Learning Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/nabil-najmudin/"
+---
+
+## Gambaran Umum
+
+Dalam proyek ini, saya berfokus pada pengembangan model deteksi objek berbasis YOLO untuk meningkatkan ketersediaan produk di rak toko ritel bagi klien global di sektor makanan dan minuman. Dengan menciptakan pipeline yang kuat untuk anotasi data, preprocessing, dan optimasi untuk perangkat mobile, proyek ini bertujuan untuk meningkatkan pelacakan inventaris secara real-time dan memastikan ketersediaan produk di rak. Selain itu, saya merancang antarmuka mobile yang berorientasi pada pengguna untuk integrasi fitur deteksi berbasis YOLO, memberikan alat yang efisien bagi manajer toko dalam mengelola inventaris.
+
+## Fitur Kunci
+
+    - **Integrasi Model YOLO**: Mengimplementasikan dan menyesuaikan enam versi algoritma YOLO (YOLOv5-nano, YOLOv6-nano, YOLOv7-tiny, dan YOLOv8-nano) untuk menemukan solusi terbaik dalam deteksi produk di rak, dengan fokus pada akurasi dan kecepatan inferensi.
+    -	**Anotasi dan Preprocessing Data**: Mengelola pipeline anotasi dan preprocessing untuk lebih dari 10.000 gambar dengan 506 kelas produk unik, menciptakan dataset yang beragam dan representatif guna memastikan akurasi deteksi yang tinggi.
+    -	**Optimasi Mobile**: Menyesuaikan model untuk deployment pada perangkat mobile, menggunakan MobileNetV3 untuk mengurangi ukuran model dan mempercepat inferensi, memungkinkan pelacakan inventaris secara real-time pada perangkat mobile berbiaya rendah.
+    -	**Desain UI/UX untuk Aplikasi Mobile**: Merancang antarmuka UI/UX yang intuitif untuk aplikasi mobile, yang menyajikan hasil deteksi secara real-time, memungkinkan manajer toko dengan cepat mengidentifikasi produk yang habis dan meningkatkan alur kerja inventaris di dalam toko.
+
+## Teknologi yang Digunakan
+
+    - **YOLOv5 - YOLOv8**: Untuk variasi model deteksi objek, diuji pada beberapa versi ringan yang dioptimalkan untuk perangkat mobile.
+    - **MobileNetV3**: Untuk efisiensi model dan kompatibilitas dengan perangkat mobile melalui teknik kuantisasi (INT8 dan FP16) dan pruning.
+    - **LabelImg**: Untuk anotasi dan pengelolaan dataset dalam skala besar, terintegrasi dengan pipeline preprocessing kustom.
+    - **Figma**: Untuk desain UI/UX aplikasi mobile, memastikan antarmuka aplikasi dioptimalkan agar mudah digunakan dan cepat diadopsi oleh manajer toko.
+
+## Tantangan dan Pembelajaran
+
+Tantangan utama adalah menyeimbangkan antara akurasi deteksi dan efisiensi model agar mendukung performa real-time pada perangkat mobile. Hal ini memerlukan pemilihan arsitektur model yang cermat serta penerapan teknik optimasi seperti kuantisasi dan pruning. Selain itu, bekerja dengan dataset besar yang berisi lebih dari 10.000 gambar dengan 506 kelas menghadirkan tantangan unik dalam manajemen data dan kontrol kualitas anotasi, yang diatasi melalui proses anotasi dan validasi yang terstruktur.
+
+## Hasil
+
+Sistem deteksi berbasis YOLO berhasil di-deploy, mengurangi waktu yang dihabiskan untuk pemeriksaan inventaris manual hingga 60%. Aplikasi mobile dengan antarmuka yang ramah pengguna diterima dengan baik oleh manajer toko, meningkatkan kemampuan mereka untuk menjaga ketersediaan produk secara optimal. Proyek ini menunjukkan efektivitas kombinasi efisiensi model dengan desain UI/UX yang intuitif untuk solusi real-time yang menjembatani teknologi AI dan kebutuhan praktis di sektor ritel.
+
+---
+
+Proyek ini menonjolkan keahlian dalam pembelajaran mesin, optimasi model untuk aplikasi mobile, dan desain berfokus pada pengguna, yang sangat relevan untuk peran yang berkaitan dengan implementasi AI di dunia nyata.
