@@ -55,7 +55,7 @@ const home = {
   headline: <>Data & back-end engineer</>,
   subline: (
     <>
-      I'm Nabil, a software developer at
+      I'm Nabil, a back end engineer at
       <InlineCode>
         Badan Sistem Informasi Universitas Islam Indonesia
       </InlineCode>{" "}
@@ -109,7 +109,7 @@ const about = {
       {
         company: "Badan Sistem Informasi UII",
         timeframe: "2024 - Present",
-        role: "Software Developer",
+        role: "Back End Engineer",
         achievements: [
           <>
             Contributed to enhancing UII’s environment by implementing Scrum
