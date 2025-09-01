@@ -1,0 +1,86 @@
+---
+title: "GoBank - Sistem Perbankan Enterprise"
+publishedAt: "2025-01-01"
+summary: "API perbankan siap produksi dengan arsitektur enterprise-grade dan integrasi cloud untuk transaksi keuangan yang aman"
+images:
+  - "/images/projects/gobank/cover-01.png"
+  - "/images/projects/gobank/cover-02.png"
+team:
+  - name: "Nabil Najmudin"
+    avatar: "/images/avatar.jpg"
+---
+
+## Gambaran Umum
+
+GoBank adalah sistem perbankan enterprise komprehensif yang dibangun dengan Go, mendemonstrasikan arsitektur siap produksi dan best practice untuk aplikasi teknologi finansial. Sistem ini mengimplementasikan pemrosesan transaksi yang aman, manajemen akun, dan notifikasi real-time dengan keamanan tingkat enterprise.
+
+## Stack Teknologi
+
+- **Backend:** Go (Fiber framework)
+- **Database:** PostgreSQL dengan indexing teroptimasi
+- **Cache:** Redis untuk manajemen sesi
+- **Storage:** AWS S3 untuk penyimpanan file aman
+- **Dokumentasi:** Swagger/OpenAPI
+- **Arsitektur:** Prinsip Clean Architecture
+
+## Fitur Utama
+
+### Operasi Perbankan Inti
+- **36 RESTful endpoints** dengan operasi CRUD lengkap
+- Autentikasi JWT dengan refresh tokens
+- Update saldo real-time dan riwayat transaksi
+- Dukungan multi-mata uang
+
+### Keamanan & Kepatuhan
+- **Rate limiting** untuk mencegah penyalahgunaan
+- **Proteksi idempotency** untuk integritas transaksi
+- Validasi dan sanitasi input yang komprehensif
+- Audit logging untuk semua operasi finansial
+- Pertimbangan kepatuhan PCI DSS
+
+### Optimasi Performa
+- Redis caching untuk data yang sering diakses
+- Database connection pooling
+- Pola query teroptimasi dengan indexing yang tepat
+- Pemrosesan asinkron untuk operasi non-kritis
+
+### Integrasi Cloud
+- **Integrasi AWS S3** untuk penyimpanan dokumen
+- Kontrol biaya otomatis dan manajemen lifecycle
+- CloudFront CDN untuk aset statis
+- Kemampuan auto-scaling
+
+## Highlight Teknis
+
+### Implementasi Clean Architecture
+```go
+// Pemisahan concern dengan batasan yang jelas
+├── domain/       // Logika bisnis
+├── usecase/      // Logika aplikasi  
+├── repository/   // Layer akses data
+└── delivery/     // HTTP handlers
+```
+
+### Fitur Real-time
+- Notifikasi WebSocket untuk alert transaksi instan
+- Update saldo langsung
+- Alert deteksi fraud real-time
+
+### Dokumentasi & Testing
+- Dokumentasi API interaktif dengan Swagger
+- Generasi statement PDF/CSV otomatis
+- Coverage test komprehensif (>80%)
+- Testing integrasi dan load
+
+## Hasil & Dampak
+
+- Berhasil menangani **10.000+ pengguna konkuren**
+- Waktu respons rata-rata **< 100ms**
+- **99.9% uptime** dengan degradasi yang graceful
+- Nol insiden keamanan sejak deployment
+
+## Tautan
+
+- [Repository GitHub](https://github.com/nabiilNajm26/gobank)
+- [Dokumentasi API](#)
+- [Demo Live](#)

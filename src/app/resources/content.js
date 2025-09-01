@@ -6,10 +6,10 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Backend & Data Engineer",
+  role: "Backend Engineer | Machine Learning Engineer",
   avatar: "/images/avatar.jpg",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Bahasa", "Arabic"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:nabilbisnis121@gmail.com",
+    link: "mailto:nabil.najmudin10@gmail.com",
   },
 ];
 
@@ -52,23 +52,17 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Data & back-end engineer</>,
+  headline: <>Backend & Machine Learning Engineer</>,
   subline: (
     <>
-      I'm Nabil, a back end engineer at
-      <InlineCode>
-        Badan Sistem Informasi Universitas Islam Indonesia
-      </InlineCode>{" "}
-      , a machine learning engineer at{" "}
-      <InlineCode>
-        Center of Data Science Universitas Islam Indonesia
-      </InlineCode>{" "}
-      and wordpress developer at{" "}
-      <InlineCode>
-        Student Staff Teknik Kimia Universitas Islam Indonesia
-      </InlineCode>
-      where I work on developing machine learning models and manage content for
-      the university’s Chemical Engineering department website.
+      I'm Nabil, currently building enterprise-grade systems as a Backend Engineer at{" "}
+      <InlineCode>BSI Universitas Islam Indonesia</InlineCode>, where I've developed 
+      140+ APIs and architected AI-powered automation workflows. I also work as a 
+      Machine Learning Engineer at{" "}
+      <InlineCode>Center of Data Science UII</InlineCode>, contributing to 
+      production ML systems for global FMCG clients like Nestlé. With expertise in 
+      Go, Laravel, Python, and distributed systems, I'm passionate about creating 
+      scalable solutions that bridge academic research with real-world impact.
     </>
   ),
 };
@@ -93,12 +87,14 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Nabil is a Yogyakarta-based data & backend engineer with expertise in
-        building scalable systems, optimizing data pipelines, and implementing
-        machine learning models for real-world applications. Passionate about
-        using technology to solve practical challenges, Nabil brings a strong
-        background in data engineering and backend development to create
-        efficient, user-centric solutions.
+        Nabil is a Yogyakarta-based Backend and Machine Learning Engineer with a proven 
+        track record in enterprise software development and AI solutions. Currently pursuing 
+        his Bachelor's in Informatics at UII (GPA: 3.82/4.00), he has published research in 
+        SINTA 2 journals and presented at international conferences like ACCV 2024. 
+        His expertise spans from building microservices architectures and distributed systems 
+        to developing production-ready ML models for retail optimization. Nabil combines 
+        strong technical skills in Go, Laravel, Python, and cloud technologies with a 
+        data-driven approach to solve complex business challenges.
       </>
     ),
   },
@@ -108,96 +104,102 @@ const about = {
     experiences: [
       {
         company: "Badan Sistem Informasi UII",
-        timeframe: "2024 - Present",
-        role: "Back End Engineer",
+        timeframe: "Jan 2025 - Present",
+        role: "Backend Engineer → Fullstack Engineer",
         achievements: [
           <>
-            Contributed to enhancing UII’s environment by implementing Scrum
-            methodologies, DevOps practices, and microservices architecture.
+            Led backend development for Enterprise Architecture platform supporting entire 
+            university ecosystem, implementing <InlineCode>140+ APIs</InlineCode> for core functionalities
+          </>,
+          <>
+            Designed complete database architecture with 41 tables, 48 foreign keys, and 
+            150+ optimized indexes, achieving <InlineCode>40% query performance improvement</InlineCode>
+          </>,
+          <>
+            Executed Organizations v1→v2.2 database migration using compatibility VIEWs and 
+            zero-downtime strategy with feature flags and adapter patterns
+          </>,
+          <>
+            Built AI-powered business process workflow automation integrating Gemini AI & 
+            OpenAI API, reducing process documentation from days to <InlineCode>120-second generation</InlineCode>
+          </>,
+          <>
+            Developed multi-tenant security layer using custom header-based authentication, 
+            adopted as best practice for Laravel/Lumen projects by PMO
+          </>,
+          <>
+            Expanded to fullstack role (June 2025), developing 12 Angular components for 
+            business process management and application catalog interfaces
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-        ],
+        images: [],
       },
       {
         company: "Center of Data Science UII",
-        timeframe: "2023 - Present",
-        role: "Machine Learning & Data Engineer, UI & UX Designer",
+        timeframe: "Feb 2023 - Present",
+        role: "Machine Learning Engineer",
         achievements: [
           <>
-            Contributed to SINTA 2-class paper 'YOLO-based Small-scaled Model
-            for On-Shelf Availability in Retail’.
+            Contributed to end-to-end ML project for <InlineCode>Nestlé (global FMCG client)</InlineCode>, 
+            developing On-Shelf Availability detection system deployed across Indonesian retail channels
           </>,
           <>
-            Handled 6 models from the largest food and beverage company in the
-            world, ensuring optimal performance and accuracy for each.
+            Built automated preprocessing & annotation pipelines for <InlineCode>10,000+ retail images</InlineCode> across 
+            506 classes, integrating MobileNetV3 optimization — reducing data preparation time by 60%
           </>,
           <>
-            Maintaining Image Detection with CNN, Tensorflow Object Detection
-            API with MobileNetV3, prepared for mobile deployment.
+            Invited to <InlineCode>CV4DC hosted by ACCV 2024</InlineCode> in Hanoi, Vietnam to present research paper
           </>,
           <>
-            Managing annotation of 10,000+ images for robust ML model training
-            in PASCAL/VOC format using LabelImg.
+            Co-authored SINTA 2 publication on "YOLO-based Small-scaled Model for On-Shelf 
+            Availability in Retail" while delivering production-ready ML solutions
           </>,
           <>
-            Preprocessing datasets for 27 training iterations, managing 506+
-            classes.
-          </>,
-          <>
-            Designed UI/UX for a mobile app using a YOLO-based model for retail
-            shelf availability, enhancing user experience and integrating
-            seamlessly with the ML model.
+            Designed and integrated UI/UX for mobile app using YOLO-based detection, 
+            bridging academic research with enterprise deployment needs
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-03/cover-02.png",
-            alt: "YOLO-based Small-scaled Model for On-Shelf Availability in Retail paper",
+            alt: "YOLO-based Model for On-Shelf Availability",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Smartfarma Indonesia",
+        company: "SmartFarma Indonesia",
         timeframe: "Aug 2022 - Sep 2023",
         role: "AI Developer",
         achievements: [
           <>
-            Achieved 81.54% accuracy for SmartFarma, surpassing benchmarks like
-            Chat GPT 3 and biomedical-ner-all model.
+            Developed AI chatbot with <InlineCode>150+ symptom patterns</InlineCode>, achieving 81.54% accuracy 
+            and outperforming benchmarks like GPT-3 and biomedical-ner models
           </>,
           <>
-            Crafted a chatbot system with over 150 symptom patterns,
-            significantly improving diagnostic accuracy.
+            Improved diagnostic accuracy and reduced errors by <InlineCode>40%</InlineCode> through 
+            rigorous testing and refined regular expressions
           </>,
           <>
-            Collaborated with pharmacists to validate chatbot effectiveness in
-            symptom identification, enhancing user trust and adoption.
-          </>,
-          <>
-            Conducted rigorous testing and refined regular expressions to
-            enhance chatbot capability, reducing errors by 40%.
+            Collaborated with pharmacists to validate chatbot effectiveness in symptom 
+            identification, enhancing user trust and adoption
           </>,
         ],
         images: [],
       },
       {
         company: "Student Staff Teknik Kimia UII",
-        timeframe: "2023 - Present",
-        role: "Wordpress Developer",
+        timeframe: "Feb 2023 - Present",
+        role: "WordPress Developer",
         achievements: [
           <>
-            Managed the Chemical Engineering Department’s website, optimizing
-            user experience and ensuring updated content for recruitment and
-            information dissemination.
+            Managed Chemical Engineering Department website, optimizing user experience 
+            and ensuring updated content for recruitment
           </>,
           <>
-            Posted 30+ announcements and news, while implementing design
-            improvements to boost user engagement.
+            Posted <InlineCode>40+ announcements</InlineCode> and implemented design improvements 
+            to boost user engagement
           </>,
         ],
         images: [],
@@ -206,26 +208,43 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
         name: "Universitas Islam Indonesia",
-        description: <>Bachelor of Informatics.</>,
-      },
-      {
-        name: "Data Engineering Bootcamp Batch 5",
         description: (
           <>
-            Led by PT. Dibimbing Digital Indonesia | Studied Data Engineering.
+            Bachelor's Degree in Informatics (2021 - Present) • <InlineCode>GPA: 3.82/4.00</InlineCode>
+            <br />
+            Research: YOLO-based Small-scaled Model for On-Shelf Availability in Retail (Published in Jurnal Resti, SINTA 2)
+            <br />
+            Laboratory Assistant: Logic Programming & Fundamentals of Application Development
+            <br />
+            Assistant Lecturer: Fundamentals of Informatics, Indonesian for Scientific Communication, Arabic
           </>
         ),
       },
       {
-        name: "Bangkit Academy 2024 Batch 1",
+        name: "PT. Dibimbing Digital Indonesia",
         description: (
           <>
-            Led by Google, Tokopedia, Gojek, & Traveloka | Studied Machine
-            Learning.
+            Data Engineering Bootcamp Batch 5 (Mar - July 2024)
+            <br />
+            Completed bootcamp covering GIT, SQL, ETL, and Big Data
+            <br />
+            <InlineCode>Ranked 1st with 94.6 post-test average</InlineCode>
+          </>
+        ),
+      },
+      {
+        name: "Bangkit Academy 2024 by Google, GoTo, Traveloka",
+        description: (
+          <>
+            Machine Learning Learning Path (Jan - July 2024)
+            <br />
+            Participated in structured curriculum with workshops, projects, and collaborative learning
+            <br />
+            Led by industry experts from Google, Tokopedia, Gojek, & Traveloka
           </>
         ),
       },
@@ -233,63 +252,54 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills & Achievements",
     skills: [
       {
-        title: "Python",
+        title: "Backend Development",
         description: (
-          <>Using python to do machine learning & data engineering tasks.</>
+          <>
+            <strong>Languages:</strong> Go (Fiber, Gin), PHP (Laravel/Lumen 8.x), Python, TypeScript
+            <br />
+            <strong>Databases:</strong> MySQL, PostgreSQL, Redis
+            <br />
+            <strong>DevOps:</strong> Docker, Kubernetes, GitLab CI/CD, Git
+            <br />
+            <strong>APIs:</strong> RESTful APIs, Postman, Swagger/OpenAPI, WebSocket
+          </>
         ),
-        images: [
-          {
-            src: "/images/projects/project-03/cover-01.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-04/cover-01.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma.</>,
-        images: [
-          {
-            src: "/images/projects/project-02/cover-01.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-03/cover-01.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-04/cover-01.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Machine Learning & AI",
+        description: (
+          <>
+            <strong>Frameworks:</strong> TensorFlow 1&2, TFLite, Keras, PyTorch
+            <br />
+            <strong>Libraries:</strong> NumPy, Pandas, Scikit-learn, OpenCV
+            <br />
+            <strong>Tools:</strong> LabelImg, CVAT, Label Studio, Protocol Buffers
+            <br />
+            <strong>APIs:</strong> Gemini AI, OpenAI API integration
+          </>
+        ),
+        images: [],
       },
       {
-        title: "Laravel",
-        description: <>Building apps with Laravel.</>,
-        images: [
-          {
-            src: "/images/projects/project-02/cover-01.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Achievements & Publications",
+        description: (
+          <>
+            • <strong>ACCV Computer Vision for Developing Countries (CV4DC) 2024</strong> - International Workshop Presenter, Hanoi, Vietnam
+            <br />
+            • <strong>1st Place Informatics Expo 2022</strong> - Universitas Islam Indonesia
+            <br />
+            • <strong>Big Data Challenge Semifinalist</strong> - SATRIA DATA 2023 (National Competition)
+            <br />
+            • <strong>PPK Ormawa Recipient</strong> - Ministry of Education Program
+            <br />
+            • <strong>Published Research:</strong> "YOLO-based Small-scaled Model for On-Shelf Availability in Retail" (SINTA 2 Journal)
+          </>
+        ),
+        images: [],
       },
     ],
   },
